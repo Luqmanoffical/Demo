@@ -3,6 +3,38 @@ import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const Settings = () => {
+    const [selectedMenu, setSelectedMenu] = useState("Treatments");
+    const menus = ["General", "Password", "Price", "Treatments"];
+  
+    return (
+      <div className="flex min-h-screen">
+        <div className="w-1/4 bg-white p-4">
+          <h2 className="text-xl font-bold mb-4">Settings</h2>
+          <ul className="list-none bg-indigo-50 rounded-3xl p-3">
+            {menus.map((menu) => (
+              <li
+                key={menu}
+                onClick={() => setSelectedMenu(menu)}
+                className={`cursor-pointer py-2 px-4 mb-2 rounded-lg ${
+                  selectedMenu === menu
+                    ? "bg-white text-indigo-500"
+                    : "hover:bg-gray-200"
+                }`}
+              >
+                {menu}
+              </li>
+            ))}
+          </ul>
+        </div>
+  
+        <div className="w-3/4 p-6">
+          {selectedMenu === "Treatments" ? <Treatments /> : <div>{selectedMenu} Content</div>}
+        </div>
+      </div>
+    );
+};
+
 const Treatments = () => {
   const [selectedCategory, setSelectedCategory] = useState("Skin improvement");
   const [subCategories, setSubCategories] = useState([]);
@@ -26,7 +58,7 @@ const Treatments = () => {
       const updatedSubCategories = [...subCategories, newTreatment.trim()];
       setSubCategories(updatedSubCategories);
       setNewTreatment("");
-    toast.alert("List Add Success. Plzz Save");
+      toast.success("List Add Success. Please Save.");
     }
   };
 
@@ -72,7 +104,7 @@ const Treatments = () => {
           <h4 className="text-lg font-bold mb-4">
             {selectedCategory} ({subCategories.length})
           </h4>
-          <ul className=" rounded-3xl">
+          <ul className="rounded-3xl">
             {subCategories.map((sub, index) => (
               <li
                 key={index}
@@ -120,5 +152,4 @@ const Treatments = () => {
   );
 };
 
-export default Treatments;
-
+export default Settings;
