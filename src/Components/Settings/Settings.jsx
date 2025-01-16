@@ -91,7 +91,7 @@ const Treatments = () => {
                 className={`cursor-pointer py-2 px-4 mb-2 rounded-lg ${
                   selectedCategory === category
                     ? "bg-indigo-50 text-indigo-500"
-                    : "hover:bg-gray-200"
+                    : "hover:bg-indigo-50"
                 }`}
               >
                 {category}
