@@ -19,7 +19,7 @@ const Settings = () => {
                 className={`cursor-pointer py-2 px-4 mb-2 rounded-lg ${
                   selectedMenu === menu
                     ? "bg-white text-indigo-500"
-                    : "hover:bg-gray-200"
+                    : "hover:bg-indigo-50"
                 }`}
               >
                 {menu}
