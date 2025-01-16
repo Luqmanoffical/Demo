@@ -14,7 +14,7 @@ function Header() {
   };
 
   return (
-    <div className="  p-4 flex justify-between items-center flex-wrap md:flex-nowrap">
+    <div className=" font-urbanist p-4 flex justify-between items-center flex-wrap md:flex-nowrap">
       
       <h1 className="font-semibold text-2xl text-black">Cosmediate</h1>
 

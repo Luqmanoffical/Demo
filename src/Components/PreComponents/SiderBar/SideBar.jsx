@@ -9,7 +9,7 @@ import i1 from "../../../assets/Vector.png"
 import i2 from "../../../assets/Vector2.png"
 const SideBar = () => {
   return (
-    <div className="h-screen  w-24 flex flex-col items-center py-6 shadow-lg">
+    <div className="h-screen font-urbanist w-24 flex flex-col items-center py-6 shadow-lg">
       <div className="space-y-10">
 
         <Link to="/dashboard" className="group flex flex-col items-center">
