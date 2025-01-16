@@ -78,7 +78,7 @@ const Treatments = () => {
   };
 
   return (
-    <div className="bg-white font-urbanist shadow-lg rounded-lg p-6">
+    <div className="bg-white font-urbanist  rounded-lg p-6">
       <h3 className="text-lg font-bold mb-4">Treatments</h3>
 
       <div className="flex">
