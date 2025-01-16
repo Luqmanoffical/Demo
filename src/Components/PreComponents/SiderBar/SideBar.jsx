@@ -14,7 +14,7 @@ const SideBar = () => {
 
         <Link to="/dashboard" className="group flex flex-col items-center">
           <RxDashboard className="text-2xl text-gray-400 group-hover:text-indigo-600" />
-          <span className="text-sm pt-2 text-gray-400 group-hover:text-indigo-600">DASHBOARD</span>
+          <span className="text-xs pt-2 text-gray-400 group-hover:text-indigo-600">DASHBOARD</span>
         </Link>
 
         <Link to="/inbox" className="group flex flex-col items-center ">
@@ -22,12 +22,12 @@ const SideBar = () => {
           <FiMail className="text-2xl text-gray-400 group-hover:text-indigo-600" />
           <span className="absolute bottom-3 left-4 w-5 h-5 text-white bg-red-400  border-2 border-white flex items-center justify-center rounded-full">2</span>
       
-          </div><span className="text-sm pt-2 text-gray-400 group-hover:text-indigo-600">INBOX</span>
+          </div><span className="text-xs pt-2 text-gray-400 group-hover:text-indigo-600">INBOX</span>
         </Link>
 
         <Link to="/schedule" className="group flex flex-col items-center">
         <img src={i2} alt="i1" />
-          <span className="text-sm pt-2 text-gray-400 group-hover:text-indigo-600">SCHEDULE</span>
+          <span className="text-xs pt-2 text-gray-400 group-hover:text-indigo-600">SCHEDULE</span>
         </Link>
 
         <Link to="/reviews" className="group flex flex-col items-center relative">
@@ -36,12 +36,12 @@ const SideBar = () => {
           <span className="absolute bottom-3 left-4 w-5 h-5 text-white bg-red-400  border-2 border-white flex items-center justify-center rounded-full">6</span>
       
           </div>
-          <span className="text-sm pt-2 text-gray-400 group-hover:text-indigo-600">REVIEWS</span>
+          <span className="text-xs pt-2 text-gray-400 group-hover:text-indigo-600">REVIEWS</span>
         </Link>
 
         <Link to="/settings" className="group flex flex-col items-center mt-auto">
           <FiSettings className="text-2xl text-indigo-600" />
-          <span className="text-sm pt-2 text-indigo-600">SETTINGS</span>
+          <span className="text-xs pt-2 text-indigo-600">SETTINGS</span>
         </Link>
       </div>
     </div>
